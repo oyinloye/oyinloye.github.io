@@ -31,7 +31,7 @@
          event.preventDefault();
          $('html, body').stop().animate({ scrollTop: $('#testimonials').offset().top }, 600, 'easeOutSine');
       });
-      $("#testimonialsContainer").owlCarousel({autoplayTimeout:5000, margin: 0, autoplay: true, nav: false, loop: true, dots: true, items: 1, slideBy: 1});
+      $("#testimonialsContainer").owlCarousel({autoplayTimeout:5000, margin: 0, autoplay: true, nav: false, loop: true, dots: true, responsive: {0: {items: 1},480: {items: 1}, slideBy: 1}});
       $("a[href*='#team']").click(function(event)
       {
          event.preventDefault();
